@@ -1,0 +1,17 @@
+name: "Hello Action"
+description: "Small greeting to everyone"
+authorL: "bluebike@github"
+
+inputs:
+  MY_NAME:
+    description: "Who to greet"
+    required: true
+    default: "Canada"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+  branding:
+    icon: "mic"
+    color: "red"
